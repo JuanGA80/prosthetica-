@@ -43,6 +43,7 @@ p {
   gap: 170px;
   transition: all 0.275s ease;
   max-width: 100%;
+  box-sizing: border-box;
 }
 
 .header-1 {
