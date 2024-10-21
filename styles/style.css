@@ -302,7 +302,7 @@ p {
 
 .servicios {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   place-items: center;
   padding: 10px 0;
   max-width: 100%;
@@ -337,6 +337,8 @@ p {
   width: 30%;
 }
 
+
+
 .servicios .btn-casos,
 .texto-testimonios a {
   padding: 20px 35px;
@@ -346,6 +348,14 @@ p {
   margin: 10px 0;
   text-decoration: none;
   transition: all 0.2s ease-in-out;
+}
+
+.servicios .btn-casos {
+  width: 50%;
+  margin-top: 25px;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .servicios .btn-casos:hover,
