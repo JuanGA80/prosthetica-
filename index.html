@@ -13,9 +13,49 @@
   <meta name="description" content="Pagina clinica dental Prosthetica" />
   <link rel="shortcut icon" href="img/logo/logo-prosthetica-square.png" type="image/x-icon" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Meta Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '571774498868542');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=571774498868542&ev=PageView&noscript=1" /></noscript>
+  <!-- End Meta Pixel Code -->
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-NFP6KH6S');</script>
+  <!-- End Google Tag Manager -->
+
+
 </head>
 
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NFP6KH6S" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
   <header class="header-1">
     <div class="header" id="header">
       <a href="/" class="logo-btn">
@@ -85,13 +125,16 @@
     <div class="swiper videos-slider">
       <div class="swiper-wrapper">
         <div class="swiper-slide swiper-slide-video">
-          <video src="./video/video-presentation-1.mp4"  controls loop class="video-presentation" poster="./img/Portadas/poster-1.png"></video>
+          <video src="./video/video-presentation-1.mp4" controls loop class="video-presentation"
+            poster="./img/Portadas/poster-1.png"></video>
         </div>
         <div class="swiper-slide swiper-slide-video">
-          <video src="./video/video-presentation-2.mp4" poster="./img/Portadas/poster-2.png" controls loop class="video-presentation"></video>
+          <video src="./video/video-presentation-2.mp4" poster="./img/Portadas/poster-2.png" controls loop
+            class="video-presentation"></video>
         </div>
         <div class="swiper-slide swiper-slide-video">
-          <video src="./video/video-presentation-3.mp4" poster="./img/Portadas/poster-3.png" controls loop class="video-presentation"></video>
+          <video src="./video/video-presentation-3.mp4" poster="./img/Portadas/poster-3.png" controls loop
+            class="video-presentation"></video>
         </div>
       </div>
 
