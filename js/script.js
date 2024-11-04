@@ -36,6 +36,25 @@ const swiperVideos = new Swiper('.videos-slider', {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+  on: {
+    slideChange: function () {
+       // Obtén todos los vídeos en los slides
+       const videos = document.querySelectorAll('.swiper-slide-video video');
+
+       // Pausa todos los vídeos y reinicia el audio
+       videos.forEach(video => {
+         video.pause();
+         video.currentTime = 0;
+       });
+ 
+       // Reproduce solo el vídeo del slide activo
+       const activeSlide = this.slides[this.activeIndex];
+       const activeVideo = activeSlide.querySelector('video');
+       if (activeVideo) {
+         activeVideo.play();
+       }
+    }  
+  }
 })
 
 
