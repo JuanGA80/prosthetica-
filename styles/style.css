@@ -34,7 +34,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   height: 100px;
-  background-color: transparent;
+  background-color: #fff;
   position: fixed;
   top: 0;
   right: 0;
@@ -306,6 +306,7 @@ p {
   place-items: center;
   padding: 10px 0;
   max-width: 100%;
+  margin-bottom: 50px;
 }
 
 
@@ -591,6 +592,51 @@ dialog {
   transform: scale(1);
 }
 
+/* Implantes */
+
+.container-implantes {
+  width: 100%;
+  margin: 80px 0;
+}
+
+.implantes-fig {
+  width: 100%;
+}
+
+.implantes-fig img {
+  width: 100%;
+}
+
+.implantes-textos {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  align-items: center;
+}
+
+.implantes-textos h4 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.implantes-textos span {
+  text-align: justify;
+  color: #999;
+  font-size: 20px;
+}
+
+.implantes-textos a {
+  padding: 20px 40px;
+  color: #fff;
+  background-color: #2A2F35;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
 /*Fin Estilos Galería*/
 /*Estilos TEstimonios*/
 .container-testimonios {
@@ -844,6 +890,9 @@ dialog {
   bottom: 20px;
   right: 20px;
   z-index: 13;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .botones-flotantes a {
@@ -862,17 +911,11 @@ dialog {
 .botones-flotantes #whats {
   background-color: #3cb878;
   color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .botones-flotantes #tel {
   background-color: var(--tercer-color);
   color: white;
-  position: absolute;
-  bottom: 0;
-  right: 0;
 }
 
 .botones-flotantes #whats:hover {
@@ -883,17 +926,17 @@ dialog {
   background-color: var(--secondary-color);
 }
 
-.botones-flotantes img {
+/* .botones-flotantes img {
   width: 40px;
-}
+} */
 
-.botones-flotantes #menu-contacto {
+/* .botones-flotantes #menu-contacto {
   background-color: var(--tercer-color);
   z-index: 14;
   position: relative;
   width: 75px;
   height: 75px;
-}
+} */
 
 .botones-flotantes #menu-contacto:hover {
   background-color: var(--secondary-color);
@@ -1013,7 +1056,7 @@ dialog {
     box-sizing: border-box;
   }
 
-  .container-videos--img{
+  .container-videos--img {
     display: flex;
     height: 100%;
     flex-wrap: wrap;
@@ -1098,7 +1141,7 @@ dialog {
   }
 
   .servicios-summary h2 {
-    font-size:30px;
+    font-size: 30px;
   }
 
   .servicios-summary p {
@@ -1180,8 +1223,50 @@ dialog {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  /* Implantes */
+
+  .container-implantes {
+    width: 100%;
+    margin: 80px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+  } 
+
+  .implantes-fig {
+    width: 100%;
+  }
+
+  .implantes-textos {
+    gap: 25px;
+    padding: 70px;
+    align-items: center;
+  }
+
+  .implantes-textos h4 {
+    font-size: 40px;
+  }
+
+  .implantes-textos span {
+    font-size: 22px;
+  }
+
+  .implantes-textos a {
+    border-radius: 5px;
+    font-size: 17px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .implantes-textos a:hover {
+    opacity: 0.7;
+  }
+
+  /*  */
+
   .testimonios {
     flex-direction: row;
+    margin-top: 0;
   }
 
   .swiper-container {
@@ -1201,7 +1286,7 @@ dialog {
     flex-direction: column;
   }
 
-  .datos-map h5{
+  .datos-map h5 {
     font-size: 30px;
   }
 
@@ -1213,7 +1298,7 @@ dialog {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  
+
   .map-item {
     display: flex;
     flex-direction: column;
@@ -1222,7 +1307,7 @@ dialog {
     padding: 20px;
     height: 480px;
   }
-  
+
   .map-item a {
     text-decoration: none;
     color: #000;

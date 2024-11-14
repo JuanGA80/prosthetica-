@@ -41,11 +41,11 @@ window.onscroll = function() {
 }
 
 const swiper = new Swiper('.sample-slider-3', {
-  slidesPerView: 2,           //column count of shown slide
+  slidesPerView: 2,           
   spaceBetween: 10,  
-  loop: true,                         //loop
-  autoplay: {                         //autoplay
+  loop: true,                         
+  autoplay: {                         
     delay: 1500,  
     disableOnInteraction: false,
-  },          //gap of slides         
+  },          
 })

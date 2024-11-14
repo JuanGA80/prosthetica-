@@ -1,9 +1,9 @@
 const swiper = new Swiper('.sample-slider', {
   loop: true,                         //loop
   autoplay: {                         //autoplay
-    delay: 4000,  
+    delay: 4000,
     disableOnInteraction: false,
-  },       
+  },
   effect: 'coverflow',         // apply fade effect
   //   fadeEffect: {           
   //     crossFade: true     // resolve the overlapping of the slides
@@ -12,12 +12,12 @@ const swiper = new Swiper('.sample-slider', {
 })
 
 const swiperSliderMovil = new Swiper('.sample-slider-movil', {
-  loop: true,                         
-  autoplay: {                         
-    delay: 4000,  
+  loop: true,
+  autoplay: {
+    delay: 4000,
     disableOnInteraction: false,
-  },       
-  effect: 'coverflow',           
+  },
+  effect: 'coverflow',
   //   fadeEffect: {           
   //     crossFade: true     
   //   }
@@ -25,46 +25,45 @@ const swiperSliderMovil = new Swiper('.sample-slider-movil', {
 })
 
 const swiperVideos = new Swiper('.videos-slider', {
-  loop: true,                         //loop
+  loop: true,                         
   spaceBetween: 30,
-  effect: 'coverflow',         // apply fade effect
+  effect: 'coverflow',         
   //   fadeEffect: {           
-  //     crossFade: true     // resolve the overlapping of the slides
+  //     crossFade: true     
   //   }
   // ,
-  navigation: {                       //navigation(arrow)
+  navigation: {                       
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   on: {
     slideChange: function () {
-       // Obtén todos los vídeos en los slides
-       const videos = document.querySelectorAll('.swiper-slide-video video');
 
-       // Pausa todos los vídeos y reinicia el audio
-       videos.forEach(video => {
-         video.pause();
-         video.currentTime = 0;
-       });
- 
-       // Reproduce solo el vídeo del slide activo
-       const activeSlide = this.slides[this.activeIndex];
-       const activeVideo = activeSlide.querySelector('video');
-       if (activeVideo) {
-         activeVideo.play();
-       }
-    }  
+      const videos = document.querySelectorAll('.swiper-slide-video video');
+
+      videos.forEach(video => {
+        video.pause();
+        video.currentTime = 0;
+      });
+
+      // Reproduce solo el vídeo del slide activo
+      const activeSlide = this.slides[this.activeIndex];
+      const activeVideo = activeSlide.querySelector('video');
+      if (activeVideo) {
+        activeVideo.play();
+      }
+    }
   }
 })
 
 
 const swiper1 = new Swiper('.sample-slider-1', {
-  loop: true, 
+  loop: true,
   spaceBetween: 30,                        //loop
   autoplay: {                         //autoplay
-    delay: 2000,  
+    delay: 2000,
     disableOnInteraction: false,
-  },   
+  },
   pagination: {                       //pagination(dots)
     el: '.swiper-pagination',
     clickable: true,
@@ -90,9 +89,9 @@ const swiper2 = new Swiper('.consultorio', {
   spaceBetween: 30,
   loop: true,                         //loop
   autoplay: {                         //autoplay
-    delay: 2000,  
+    delay: 2000,
     disableOnInteraction: false,
-  },   
+  },
   // Responsive breakpoints
   breakpoints: {
     1024: {
@@ -103,13 +102,13 @@ const swiper2 = new Swiper('.consultorio', {
 });
 
 const bg = document.getElementById('header')
-window.onscroll = function() {
+window.onscroll = function () {
   const y = window.scrollY
   console.log(y)
-  if (y>=0) {
+  if (y >= 0) {
     bg.classList.add('header-blanco')
-  } 
-  if (y==0) {
+  }
+  if (y == 0) {
     bg.classList.remove('header-blanco')
   }
 }
@@ -124,13 +123,13 @@ cerrar.addEventListener('click', function () {
   menu.classList.remove('show-menu')
 })
 
-const menucon = document.getElementById('menu-contacto')
-const whats = document.getElementById('whats')
-const tel = document.getElementById('tel')
-menucon.addEventListener('click', function () {
-  whats.classList.toggle('show-whats')
-  tel.classList.toggle('show-tel')
-})
+// const menucon = document.getElementById('menu-contacto')
+// const whats = document.getElementById('whats')
+// const tel = document.getElementById('tel')
+// menucon.addEventListener('click', function () {
+//   whats.classList.toggle('show-whats')
+//   tel.classList.toggle('show-tel')
+// })
 
 const links = document.querySelectorAll('.menu-movil')
 links.forEach(element => {
